@@ -40,3 +40,8 @@ nav {
     background: #ffffff;
     color: darkblue;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
