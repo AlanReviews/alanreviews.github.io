@@ -41,7 +41,7 @@ nav {
     color: darkblue;
 }
 
-table, th, td {
+table, th, tr, td {
     border: 2px solid black;
     border-collapse: collapse;
 }
