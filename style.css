@@ -46,6 +46,6 @@ table, th, tr, td {
     border-collapse: collapse;
 }
 
-th, td {
+th, tr, td {
     padding: 6px;
 }
