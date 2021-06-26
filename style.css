@@ -26,18 +26,13 @@ nav {
     opacity: 0.7;
 }
 
-.fa-behance {
-    background: #ffffff;
-    color: blue;
-}
-
 .fa-github {
-    background: #ffffff;
+    background: rgb(160, 222, 238);
     color: black;
 }
 
 .fa-behance {
-    background: #ffffff;
+    background: rgb(160, 222, 238);
     color: darkblue;
 }
 
