@@ -2,6 +2,10 @@ h1 {
     text-align: center
 }
 
+h2 {
+    color: rgb(71, 71, 231)
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -27,13 +31,19 @@ nav {
 }
 
 .fa-github {
-    background: rgb(160, 222, 238);
     color: black;
 }
 
 .fa-behance {
-    background: rgb(160, 222, 238);
-    color: darkblue;
+    color: black;
+}
+
+.fa-linkedin {
+    color: black;
+}
+
+.fa-youtube {
+    color: black;
 }
 
 table, th, tr, td {
