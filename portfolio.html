@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-  body {
-    background-color: rgb(200, 232, 240)
-  }
-  * {
-    box-sizing: border-box;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
   }
 
+  /* Create four equal columns that sits next to each other */
   .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
   }
 
-  /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
   }
-  img {
-    width: 400px;
-    height: 400px;
-    object-fit:cover;
-    background-size:cover;
-    background-position:center;
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
   }
 </style>
 <script src="javascript/dropdown.js"></script>
@@ -76,18 +84,29 @@
   </ul>
   
   <h1>My Artwork</h1>
-  <img src="https://alanreviews.github.io/images/GhostHouse.jpg" alt="I photoshopped a ghost image onto a house" style="width:33%">
-  <img src="images/FlyingCircus.jpg" alt="I photoshopped a ghost image onto a circus" style="width:33%">
-  <img src="images/GERM1020 T-shirt.jpg" alt="I drew drawings on a German T-shirt with friends" style="width:33%">
-  <img src="images/PygameCar.jpg" alt="I created a Pygame car with shapes" style="width:33%">
-  <img src="images/Maze1.png" alt="A linked-list maze that I created with C" style="width:33%">
-  <img src="images/My Python Triangle.JPG" alt="I created this Python triangle with Pygame" style="width:33%">
+  <div class="row">
+    <div class="column">
+      <img src="https://alanreviews.github.io/images/GhostHouse.jpg" alt="I photoshopped a ghost image onto a house">
+      <img src="images/FlyingCircus.jpg" alt="I photoshopped a ghost image onto a circus">
+      <img src="images/GERM1020 T-shirt.jpg" alt="I drew drawings on a German T-shirt with friends">
+    </div>
+    <div class="column">
+      <img src="images/PygameCar.jpg" alt="I created a Pygame car with shapes">
+      <img src="images/Maze1.png" alt="A linked-list maze that I created with C">
+      <img src="images/My Python Triangle.JPG" alt="I created this Python triangle with Pygame">
+    </div>
+  </div>
   <h1>My Photography</h1>
-  <img class="img-responsive" src="images/Alex Gaming PC.jpg" alt="A Gaming PC with RGB lighting" style="width:33%">
-  <img class="img-responsive" src="images/Lake.jpg" alt="A lake" style="width:33%">
-  <img class="img-responsive" src="images/Ubuntu18.04 on Lenovo.jpg" alt="I installed Ubuntu 18.04 on my laptop" style="width:33%">
-  <img class="img-responsive" src="images/MyGamingPC.jpg" alt="My Gaming PC" style="width:33%">
-  <img class="img-responsive" src="images/Lenovo_T450_Setup.jpg" alt="My work setup with a Lenovo T450 laptop and Dell 24 inch monitor" style="width:33%">
+  <div class="row">
+    <div class="column">
+      <img class="img-responsive" src="images/Alex Gaming PC.jpg" alt="A Gaming PC with RGB lighting">
+      <img class="img-responsive" src="images/Lake.jpg" alt="A lake">
+      <img class="img-responsive" src="images/Ubuntu18.04 on Lenovo.jpg" alt="I installed Ubuntu 18.04 on my laptop">
+    </div>
+    <div class="column">
+      <img class="img-responsive" src="images/MyGamingPC.jpg" alt="My Gaming PC">
+      <img class="img-responsive" src="images/Lenovo_T450_Setup.jpg" alt="My work setup with a Lenovo T450 laptop and Dell 24 inch monitor">
+    </div>
+  </div>
 </body>
-
 </html>
