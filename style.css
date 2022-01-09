@@ -99,3 +99,12 @@ th, tr, td {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+img {                                                                           
+    max-width: 100%;                                                              
+    height: auto;                                                                 
+}
+iframe {
+    max-width: 100%;
+    width: 858px;
+    height: 480px;
+}
