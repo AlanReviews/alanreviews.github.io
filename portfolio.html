@@ -73,7 +73,14 @@
 <body>
   <h1>Portfolio</h1>
   <p>Here is my portfolio, showcasing my artwork, videos, and photography!</p>
-  <h1>My Projects</h1>
+  <ul>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#artwork">Artwork</a></li>
+    <li><a href="#photography">Photography</a></li>
+    <li><a href="#figma">Figma</a></li>
+  </ul>
+  <div id="projects">
+  <h1>Projects</h1>
   <h2>Veloren and Rust Review</h2>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/zh9_HldWFnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <p>Personal Project | August 2022 - October 2022</p>
@@ -108,8 +115,15 @@
     <li>Developed documentation to communicate the porting steps</li>
     <li>Click <a href="https://github.com/AlanReviews/Building-And-Flashing-MicroPython-into-a-STM32-Board">here</a> to see my project</li>
   </ul>
-  
-  <h1>My Artwork</h1>
+  <h2>Grid-based Mesh Simplification</h2>
+  <img src="images/GeomprocMeshes.png" alt="A slide that consist of simplified meshes.">
+  <p>Carleton University | November 2024 - December 2024</p>
+  <p>I simplified meshes using a grid-based mesh simplification algorithm in a Geometry Processing course. I implemented the algorithm in Python. I used Blender and Meshlab to examine the results.
+    The simplified mesh has fewer faces and looks like it is made out of voxels. From my observation, new holes are made in some meshes such as the bunny mesh.
+  </p>
+  </div>
+  <div id="artwork">
+  <h1>Artwork</h1>
   <div class="row">
     <div class="column">
       <img src="https://alanreviews.github.io/images/GhostHouse.jpg" alt="I photoshopped a ghost image onto a house">
@@ -122,7 +136,9 @@
       <img src="images/My Python Triangle.JPG" alt="I created this Python triangle with Pygame">
     </div>
   </div>
-  <h1>My Photography</h1>
+</div>
+<div id="photography">
+  <h1>Photography</h1>
   <div class="row">
     <div class="column">
       <img class="img-responsive" src="images/Alex Gaming PC.jpg" alt="A Gaming PC with RGB lighting">
@@ -133,6 +149,13 @@
       <img class="img-responsive" src="images/MyGamingPC.jpg" alt="My Gaming PC">
       <img class="img-responsive" src="images/Lenovo_T450_Setup.jpg" alt="My work setup with a Lenovo T450 laptop and Dell 24 inch monitor">
     </div>
+  </div>
+</div>
+  <div id="figma">
+  <h1>Figma</h1>
+  <p style="text-align:justify;">Here is a user interface prototype of the Heartwave Monitor, created in Figma. This prototype was developed to design and plan the user interface for a group project. Red, blue, and green rectangles represent the coherence levels. The white screen represents the screen that displays the HRV graph and battery life. The black rectangle represents the battery life.
+  </p>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="500" src="https://embed.figma.com/design/HEHy1STZQ7nzxGsDL4EQRj/COMP-3004-UI-prototype?node-id=102-2&embed-host=share" allowfullscreen></iframe>
   </div>
 </body>
 </html>
